@@ -1,0 +1,189 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#000814"/>
+  
+  <!-- Stars background -->
+  <g opacity="0.6">
+    <circle cx="150" cy="100" r="1" fill="white"/>
+    <circle cx="300" cy="150" r="1" fill="white"/>
+    <circle cx="450" cy="80" r="1" fill="white"/>
+    <circle cx="600" cy="120" r="1" fill="white"/>
+    <circle cx="750" cy="90" r="1" fill="white"/>
+    <circle cx="900" cy="140" r="1" fill="white"/>
+    <circle cx="1050" cy="110" r="1" fill="white"/>
+    <circle cx="200" cy="250" r="1" fill="white"/>
+    <circle cx="350" cy="300" r="1" fill="white"/>
+    <circle cx="500" cy="280" r="1" fill="white"/>
+    <circle cx="650" cy="320" r="1" fill="white"/>
+    <circle cx="800" cy="290" r="1" fill="white"/>
+    <circle cx="950" cy="340" r="1" fill="white"/>
+    <circle cx="1100" cy="310" r="1" fill="white"/>
+  </g>
+  
+  <!-- Left Panel - Reality -->
+  <g id="reality-panel">
+    <!-- Panel background -->
+    <rect x="20" y="150" width="350" height="400" fill="#001d3d" stroke="#003566" stroke-width="2" rx="5"/>
+    
+    <!-- Panel title -->
+    <text x="195" y="180" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffd60a" text-anchor="middle">REALITY</text>
+    <text x="195" y="200" font-family="Arial, sans-serif" font-size="14" fill="#8ecae6" text-anchor="middle">What actually exists</text>
+    
+    <!-- Sun -->
+    <circle cx="195" cy="300" r="40" fill="#ffd60a">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Sun glow -->
+    <circle cx="195" cy="300" r="45" fill="none" stroke="#ffd60a" stroke-width="2" opacity="0.3"/>
+    <circle cx="195" cy="300" r="50" fill="none" stroke="#ffd60a" stroke-width="1" opacity="0.2"/>
+    
+    <!-- Earth orbit -->
+    <circle cx="195" cy="300" r="80" fill="none" stroke="#003566" stroke-width="1" stroke-dasharray="5,5" opacity="0.5"/>
+    
+    <!-- Earth -->
+    <circle cx="275" cy="300" r="4" fill="#219ebc"/>
+    <circle cx="275" cy="300" r="4" fill="#023047" opacity="0.3"/>
+    
+    <!-- Radio transmitters on Earth (zoomed inset) -->
+    <g id="earth-inset">
+      <rect x="250" y="340" width="100" height="100" fill="#001d3d" stroke="#8ecae6" stroke-width="1" rx="2"/>
+      <circle cx="300" cy="390" r="15" fill="#219ebc"/>
+      
+      <!-- Tiny dish antennas -->
+      <path d="M 285 385 L 287 387 L 285 389" fill="none" stroke="white" stroke-width="0.5"/>
+      <circle cx="285" cy="387" r="0.5" fill="white"/>
+      
+      <path d="M 295 380 L 297 382 L 295 384" fill="none" stroke="white" stroke-width="0.5"/>
+      <circle cx="295" cy="382" r="0.5" fill="white"/>
+      
+      <path d="M 305 385 L 307 387 L 305 389" fill="none" stroke="white" stroke-width="0.5"/>
+      <circle cx="305" cy="387" r="0.5" fill="white"/>
+      
+      <path d="M 295 395 L 297 397 L 295 399" fill="none" stroke="white" stroke-width="0.5"/>
+      <circle cx="295" cy="397" r="0.5" fill="white"/>
+      
+      <path d="M 310 392 L 312 394 L 310 396" fill="none" stroke="white" stroke-width="0.5"/>
+      <circle cx="310" cy="394" r="0.5" fill="white"/>
+      
+      <!-- Connection line -->
+      <line x1="275" y1="305" x2="285" y2="375" stroke="#8ecae6" stroke-width="1" stroke-dasharray="2,2"/>
+    </g>
+    
+    <!-- Radio waves -->
+    <g opacity="0.8">
+      <path d="M 275 300 Q 235 300 195 300" fill="none" stroke="#ffd60a" stroke-width="1" opacity="0.6">
+        <animate attributeName="stroke-dasharray" values="0,100;20,80;40,60;60,40;80,20;100,0" dur="2s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 275 300 Q 235 290 195 290" fill="none" stroke="#ffd60a" stroke-width="1" opacity="0.4">
+        <animate attributeName="stroke-dasharray" values="0,100;20,80;40,60;60,40;80,20;100,0" dur="2s" begin="0.2s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 275 300 Q 235 310 195 310" fill="none" stroke="#ffd60a" stroke-width="1" opacity="0.4">
+        <animate attributeName="stroke-dasharray" values="0,100;20,80;40,60;60,40;80,20;100,0" dur="2s" begin="0.4s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Label -->
+    <text x="195" y="470" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">Small radio transmitters on Earth</text>
+    <text x="195" y="490" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">coordinate signals toward Sun</text>
+  </g>
+  
+  <!-- Center Arrow -->
+  <g id="center-arrow">
+    <!-- Arrow body -->
+    <rect x="400" y="320" width="400" height="60" fill="#003566" opacity="0.3"/>
+    <polygon points="800,290 850,350 800,410" fill="#003566" opacity="0.3"/>
+    
+    <!-- Animated particles -->
+    <circle r="3" fill="#ffd60a">
+      <animateMotion dur="4s" repeatCount="indefinite">
+        <mpath href="#arrow-path"/>
+      </animateMotion>
+    </circle>
+    <circle r="3" fill="#ffd60a">
+      <animateMotion dur="4s" begin="1s" repeatCount="indefinite">
+        <mpath href="#arrow-path"/>
+      </animateMotion>
+    </circle>
+    <circle r="3" fill="#ffd60a">
+      <animateMotion dur="4s" begin="2s" repeatCount="indefinite">
+        <mpath href="#arrow-path"/>
+      </animateMotion>
+    </circle>
+    
+    <!-- Hidden path for animation -->
+    <path id="arrow-path" d="M 400 350 L 820 350" fill="none"/>
+    
+    <!-- Text -->
+    <text x="600" y="340" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffd60a" text-anchor="middle">Light travels 1000+ light-years</text>
+    <text x="600" y="360" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffd60a" text-anchor="middle">to alien observers</text>
+    <text x="600" y="400" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">Radio signals create coordinated</text>
+    <text x="600" y="415" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">dimming patterns</text>
+  </g>
+  
+  <!-- Right Panel - What Aliens Detect -->
+  <g id="detection-panel">
+    <!-- Panel background -->
+    <rect x="830" y="150" width="350" height="400" fill="#001d3d" stroke="#003566" stroke-width="2" rx="5"/>
+    
+    <!-- Panel title -->
+    <text x="1005" y="180" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffd60a" text-anchor="middle">WHAT ALIENS DETECT</text>
+    <text x="1005" y="200" font-family="Arial, sans-serif" font-size="14" fill="#8ecae6" text-anchor="middle">Artificial geometric transit signatures</text>
+    
+    <!-- Sun with geometric shadows -->
+    <g>
+      <!-- Sun base -->
+      <circle cx="1005" cy="300" r="40" fill="#ffd60a"/>
+      
+      <!-- Geometric shadow patterns -->
+      <g opacity="0.8">
+        <!-- QR-code-like pattern -->
+        <rect x="990" y="285" width="8" height="8" fill="#000814"/>
+        <rect x="1000" y="285" width="8" height="8" fill="#000814"/>
+        <rect x="990" y="295" width="8" height="8" fill="#000814"/>
+        <rect x="1010" y="295" width="8" height="8" fill="#000814"/>
+        <rect x="1000" y="305" width="8" height="8" fill="#000814"/>
+        <rect x="1010" y="305" width="8" height="8" fill="#000814"/>
+        <rect x="990" y="315" width="8" height="8" fill="#000814"/>
+        <rect x="1020" y="285" width="8" height="8" fill="#000814"/>
+        <rect x="1020" y="315" width="8" height="8" fill="#000814"/>
+        
+        <!-- Additional geometric shapes -->
+        <rect x="975" y="300" width="10" height="10" fill="#000814" transform="rotate(45 980 305)"/>
+        <polygon points="1025,290 1030,300 1025,310 1020,300" fill="#000814"/>
+      </g>
+      
+      <!-- Sun edge glow -->
+      <circle cx="1005" cy="300" r="40" fill="none" stroke="#ffd60a" stroke-width="2"/>
+    </g>
+    
+    <!-- Light curve graph -->
+    <g id="light-curve">
+      <rect x="880" y="380" width="250" height="120" fill="#001d3d" stroke="#003566" stroke-width="1"/>
+      
+      <!-- Grid lines -->
+      <line x1="880" y1="460" x2="1130" y2="460" stroke="#003566" stroke-width="0.5" opacity="0.5"/>
+      <line x1="880" y1="420" x2="1130" y2="420" stroke="#003566" stroke-width="0.5" opacity="0.5"/>
+      
+      <!-- Light curve -->
+      <path d="M 890 420 L 920 420 L 920 450 L 930 450 L 930 420 L 960 420 L 960 440 L 970 440 L 970 420 L 1000 420 L 1000 455 L 1010 455 L 1010 420 L 1040 420 L 1040 445 L 1050 445 L 1050 420 L 1080 420 L 1080 450 L 1090 450 L 1090 420 L 1120 420" 
+            fill="none" stroke="#ffd60a" stroke-width="2"/>
+      
+      <!-- Labels -->
+      <text x="1005" y="395" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">Light Curve</text>
+      <text x="885" y="495" font-family="Arial, sans-serif" font-size="10" fill="#8ecae6">Time</text>
+      <text x="885" y="415" font-family="Arial, sans-serif" font-size="10" fill="#8ecae6" transform="rotate(-90 885 415)">Brightness</text>
+    </g>
+    
+    <!-- Label -->
+    <text x="1005" y="530" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">Telescope detects artificial</text>
+    <text x="1005" y="545" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">geometric dimming patterns</text>
+  </g>
+  
+  <!-- Title and explanation -->
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffd60a" text-anchor="middle">Virtual Megastructure: Radio Signal Coordination Technique</text>
+  <text x="600" y="65" font-family="Arial, sans-serif" font-size="14" fill="#8ecae6" text-anchor="middle">Using radio frequency coordination to create detectable artificial signatures</text>
+  
+  <!-- Bottom note -->
+  <text x="600" y="760" font-family="Arial, sans-serif" font-size="11" fill="#8ecae6" text-anchor="middle" font-style="italic">No physical structures exist - geometric patterns are created by precisely timed radio interference</text>
+</svg>

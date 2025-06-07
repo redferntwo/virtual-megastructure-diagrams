@@ -1,0 +1,136 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#000814"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffd60a" text-anchor="middle">Earth Transit: Natural vs Artificial Signal Pattern</text>
+  
+  <!-- Left Panel - Natural Transit -->
+  <g id="natural-transit">
+    <!-- Panel background -->
+    <rect x="50" y="80" width="500" height="480" fill="#001d3d" stroke="#003566" stroke-width="2" rx="5"/>
+    
+    <!-- Panel title -->
+    <text x="300" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffd60a" text-anchor="middle">NATURAL EARTH TRANSIT</text>
+    <text x="300" y="130" font-family="Arial, sans-serif" font-size="14" fill="#8ecae6" text-anchor="middle">What aliens currently see</text>
+    
+    <!-- Sun -->
+    <circle cx="300" cy="250" r="80" fill="#ffd60a">
+      <animate attributeName="opacity" values="0.95;1;0.95" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Sun surface details -->
+    <circle cx="280" cy="230" r="8" fill="#ffb700" opacity="0.6"/>
+    <circle cx="320" cy="260" r="6" fill="#ffb700" opacity="0.5"/>
+    <circle cx="310" cy="240" r="4" fill="#ffb700" opacity="0.4"/>
+    <circle cx="290" cy="270" r="5" fill="#ffb700" opacity="0.5"/>
+    
+    <!-- Earth transiting (simple black circle) -->
+    <circle cx="300" cy="250" r="8" fill="#000814">
+      <animateTransform attributeName="transform" type="translate" 
+        values="-100,0;0,0;100,0" 
+        dur="6s" 
+        repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Light curve -->
+    <g transform="translate(0,100)">
+      <rect x="100" y="280" width="400" height="100" fill="#000814" stroke="#003566" stroke-width="1"/>
+      
+      <!-- Grid -->
+      <line x1="100" y1="330" x2="500" y2="330" stroke="#003566" stroke-width="0.5" opacity="0.3"/>
+      
+      <!-- Curve showing simple dip -->
+      <path d="M 120 310 L 200 310 Q 300 310 300 340 Q 300 370 400 370 L 480 370" 
+            fill="none" stroke="#ffd60a" stroke-width="2"/>
+      
+      <!-- Labels -->
+      <text x="300" y="300" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">Brightness Over Time</text>
+      <text x="300" y="400" font-family="Arial, sans-serif" font-size="10" fill="#8ecae6" text-anchor="middle">Simple, round dip = natural planet</text>
+    </g>
+    
+    <!-- Description -->
+    <text x="300" y="520" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">Earth creates a simple circular shadow</text>
+    <text x="300" y="540" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">Indistinguishable from any rocky planet</text>
+  </g>
+  
+  <!-- Right Panel - Artificial Pattern -->
+  <g id="artificial-pattern">
+    <!-- Panel background -->
+    <rect x="650" y="80" width="500" height="480" fill="#001d3d" stroke="#003566" stroke-width="2" rx="5"/>
+    
+    <!-- Panel title -->
+    <text x="900" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffd60a" text-anchor="middle">ARTIFICIAL SIGNAL PATTERN</text>
+    <text x="900" y="130" font-family="Arial, sans-serif" font-size="14" fill="#8ecae6" text-anchor="middle">What we could create with radio coordination</text>
+    
+    <!-- Sun -->
+    <circle cx="900" cy="250" r="80" fill="#ffd60a">
+      <animate attributeName="opacity" values="0.95;1;0.95" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Sun surface details -->
+    <circle cx="880" cy="230" r="8" fill="#ffb700" opacity="0.6"/>
+    <circle cx="920" cy="260" r="6" fill="#ffb700" opacity="0.5"/>
+    <circle cx="910" cy="240" r="4" fill="#ffb700" opacity="0.4"/>
+    <circle cx="890" cy="270" r="5" fill="#ffb700" opacity="0.5"/>
+    
+    <!-- Complex geometric pattern -->
+    <g id="complex-pattern">
+      <animateTransform attributeName="transform" type="translate" 
+        values="-100,0;0,0;100,0" 
+        dur="6s" 
+        repeatCount="indefinite"/>
+      
+      <!-- Multi-part geometric structure -->
+      <!-- Central core -->
+      <rect x="895" y="245" width="10" height="10" fill="#000814"/>
+      
+      <!-- Surrounding pattern - like a complex barcode -->
+      <rect x="885" y="240" width="3" height="20" fill="#000814"/>
+      <rect x="890" y="235" width="3" height="30" fill="#000814"/>
+      <rect x="907" y="235" width="3" height="30" fill="#000814"/>
+      <rect x="912" y="240" width="3" height="20" fill="#000814"/>
+      
+      <!-- Upper structure -->
+      <rect x="892" y="230" width="16" height="3" fill="#000814"/>
+      <rect x="895" y="225" width="10" height="3" fill="#000814"/>
+      
+      <!-- Lower structure -->
+      <rect x="892" y="267" width="16" height="3" fill="#000814"/>
+      <rect x="895" y="272" width="10" height="3" fill="#000814"/>
+      
+      <!-- Side elements -->
+      <polygon points="880,250 875,245 875,255" fill="#000814"/>
+      <polygon points="920,250 925,245 925,255" fill="#000814"/>
+      
+      <!-- Corner markers -->
+      <rect x="878" y="228" width="4" height="4" fill="#000814"/>
+      <rect x="918" y="228" width="4" height="4" fill="#000814"/>
+      <rect x="878" y="268" width="4" height="4" fill="#000814"/>
+      <rect x="918" y="268" width="4" height="4" fill="#000814"/>
+    </g>
+    
+    <!-- Light curve -->
+    <g transform="translate(0,100)">
+      <rect x="700" y="280" width="400" height="100" fill="#000814" stroke="#003566" stroke-width="1"/>
+      
+      <!-- Grid -->
+      <line x1="700" y1="330" x2="1100" y2="330" stroke="#003566" stroke-width="0.5" opacity="0.3"/>
+      
+      <!-- Complex curve with multiple features -->
+      <path d="M 720 310 L 760 310 L 760 320 L 770 320 L 770 310 L 780 310 L 780 340 L 790 340 L 790 325 L 800 325 L 800 335 L 810 335 L 810 315 L 820 315 L 820 345 L 830 345 L 830 320 L 840 320 L 840 350 L 850 350 L 850 330 L 860 330 L 860 340 L 870 340 L 870 315 L 880 315 L 880 335 L 890 335 L 890 310 L 920 310 L 920 320 L 930 320 L 930 310 L 940 310 L 940 340 L 950 340 L 950 325 L 960 325 L 960 335 L 970 335 L 970 315 L 980 315 L 980 345 L 990 345 L 990 320 L 1000 320 L 1000 350 L 1010 350 L 1010 330 L 1020 330 L 1020 340 L 1030 340 L 1030 315 L 1040 315 L 1040 335 L 1050 335 L 1050 310 L 1080 310" 
+            fill="none" stroke="#ffd60a" stroke-width="2"/>
+      
+      <!-- Labels -->
+      <text x="900" y="300" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">Brightness Over Time</text>
+      <text x="900" y="400" font-family="Arial, sans-serif" font-size="10" fill="#8ecae6" text-anchor="middle">Complex pattern = artificial signal</text>
+    </g>
+    
+    <!-- Description -->
+    <text x="900" y="520" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">Radio interference creates geometric patterns</text>
+    <text x="900" y="540" font-family="Arial, sans-serif" font-size="12" fill="#8ecae6" text-anchor="middle">Obviously artificial - grabs attention!</text>
+  </g>
+  
+  <!-- Bottom explanation -->
+  <text x="600" y="580" font-family="Arial, sans-serif" font-size="11" fill="#8ecae6" text-anchor="middle" font-style="italic">Virtual patterns created by precisely coordinated radio transmissions - no physical structures needed</text>
+</svg>
