@@ -1,0 +1,217 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#0a1628"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" fill="#fbbf24" font-size="24" font-weight="bold">
+    Phase 2: Clean Geometric Patterns - Interstellar Ready
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="70" text-anchor="middle" fill="#94a3b8" font-size="14">
+    100+ transmitters achieve 5 degree angular resolution
+  </text>
+  
+  <!-- Left Panel: Earth Implementation -->
+  <g>
+    <rect x="50" y="120" width="300" height="250" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2" rx="10"/>
+    <text x="200" y="150" text-anchor="middle" fill="#fbbf24" font-size="16" font-weight="bold">
+      PHASE 2 ARRAY
+    </text>
+    <text x="200" y="170" text-anchor="middle" fill="#94a3b8" font-size="12">
+      100+ transmitters
+    </text>
+    
+    <!-- Earth with many transmitters -->
+    <ellipse cx="200" cy="250" rx="80" ry="50" fill="#1f2937" stroke="#4b5563" stroke-width="2"/>
+    
+    <!-- Many small transmitter dots -->
+    <g fill="#10b981" opacity="0.8">
+      <circle cx="160" cy="220" r="2"/>
+      <circle cx="180" cy="210" r="2"/>
+      <circle cx="200" cy="200" r="2"/>
+      <circle cx="220" cy="210" r="2"/>
+      <circle cx="240" cy="220" r="2"/>
+      <circle cx="170" cy="240" r="2"/>
+      <circle cx="190" cy="235" r="2"/>
+      <circle cx="210" cy="235" r="2"/>
+      <circle cx="230" cy="240" r="2"/>
+      <circle cx="160" cy="260" r="2"/>
+      <circle cx="180" cy="265" r="2"/>
+      <circle cx="200" cy="270" r="2"/>
+      <circle cx="220" cy="265" r="2"/>
+      <circle cx="240" cy="260" r="2"/>
+      <circle cx="150" cy="240" r="2"/>
+      <circle cx="250" cy="240" r="2"/>
+      <circle cx="140" cy="250" r="2"/>
+      <circle cx="260" cy="250" r="2"/>
+    </g>
+    
+    <text x="200" y="320" text-anchor="middle" fill="#10b981" font-size="12" font-weight="bold">
+      5 degree Resolution
+    </text>
+    <text x="200" y="340" text-anchor="middle" fill="#94a3b8" font-size="11">
+      Clean patterns possible
+    </text>
+  </g>
+  
+  <!-- Center Panel: Clean Interference -->
+  <g>
+    <rect x="400" y="120" width="300" height="250" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2" rx="10"/>
+    <text x="550" y="150" text-anchor="middle" fill="#fbbf24" font-size="16" font-weight="bold">
+      CLEAN PATTERNS
+    </text>
+    <text x="550" y="170" text-anchor="middle" fill="#94a3b8" font-size="12">
+      Precise geometric shapes
+    </text>
+    
+    <!-- Clean triangle -->
+    <polygon points="530,200 570,200 550,170" fill="#10b981" fill-opacity="0.6" stroke="#10b981" stroke-width="2"/>
+    
+    <!-- Clean rectangle -->
+    <rect x="520" y="220" width="60" height="25" fill="#3b82f6" fill-opacity="0.6" stroke="#3b82f6" stroke-width="2"/>
+    
+    <!-- Clean circle -->
+    <circle cx="550" cy="280" r="20" fill="#f59e0b" fill-opacity="0.6" stroke="#f59e0b" stroke-width="2"/>
+    
+    <text x="550" y="320" text-anchor="middle" fill="#10b981" font-size="12" font-weight="bold">
+      Sharp Edges
+    </text>
+    <text x="550" y="340" text-anchor="middle" fill="#94a3b8" font-size="11">
+      Obviously artificial
+    </text>
+  </g>
+  
+  <!-- Right Panel: Alien Detection -->
+  <g>
+    <rect x="750" y="120" width="300" height="250" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2" rx="10"/>
+    <text x="900" y="150" text-anchor="middle" fill="#fbbf24" font-size="16" font-weight="bold">
+      ALIEN DETECTION
+    </text>
+    <text x="900" y="170" text-anchor="middle" fill="#94a3b8" font-size="12">
+      Interstellar-detectable
+    </text>
+    
+    <!-- Our Sun -->
+    <circle cx="900" cy="240" r="40" fill="#fbbf24"/>
+    
+    <!-- Clean triangle shadow -->
+    <polygon points="885,225 915,225 900,205" fill="#0a1628" stroke="#1f2937" stroke-width="1"/>
+    
+    <!-- Detection arrows -->
+    <defs>
+      <marker id="cleanArrow" markerWidth="8" markerHeight="6" 
+              refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#10b981"/>
+      </marker>
+    </defs>
+    
+    <line x1="850" y1="215" x2="875" y2="215" stroke="#10b981" stroke-width="2" marker-end="url(#cleanArrow)"/>
+    <line x1="950" y1="215" x2="925" y2="215" stroke="#10b981" stroke-width="2" marker-end="url(#cleanArrow)"/>
+    
+    <text x="900" y="320" text-anchor="middle" fill="#10b981" font-size="12" font-weight="bold">
+      CLEAN TRANSIT
+    </text>
+    <text x="900" y="340" text-anchor="middle" fill="#94a3b8" font-size="11">
+      Realistic scale and precision
+    </text>
+  </g>
+  
+  <!-- Bottom: Comparison -->
+  <g>
+    <rect x="100" y="420" width="1000" height="220" fill="#0f172a" stroke="#374151" stroke-width="2" rx="10"/>
+    <text x="600" y="455" text-anchor="middle" fill="#fbbf24" font-size="18" font-weight="bold">
+      Phase Comparison: Angular Resolution Impact
+    </text>
+    
+    <!-- Phase 1 -->
+    <g>
+      <text x="250" y="490" text-anchor="middle" fill="#ef4444" font-size="14" font-weight="bold">
+        PHASE 1
+      </text>
+      <text x="250" y="510" text-anchor="middle" fill="#ef4444" font-size="12">
+        16 transmitters
+      </text>
+      <text x="250" y="525" text-anchor="middle" fill="#ef4444" font-size="12">
+        25 degree resolution
+      </text>
+      
+      <!-- Blocky pattern -->
+      <g>
+        <rect x="230" y="540" width="15" height="15" fill="#ef4444" fill-opacity="0.6"/>
+        <rect x="245" y="540" width="15" height="15" fill="#ef4444" fill-opacity="0.6"/>
+        <rect x="225" y="555" width="15" height="15" fill="#ef4444" fill-opacity="0.6"/>
+        <rect x="260" y="555" width="15" height="15" fill="#ef4444" fill-opacity="0.6"/>
+        <rect x="220" y="570" width="60" height="15" fill="#ef4444" fill-opacity="0.6"/>
+      </g>
+      
+      <text x="250" y="605" text-anchor="middle" fill="#ef4444" font-size="11">
+        Pixelated
+      </text>
+    </g>
+    
+    <!-- Phase 2 -->
+    <g>
+      <text x="600" y="490" text-anchor="middle" fill="#10b981" font-size="14" font-weight="bold">
+        PHASE 2
+      </text>
+      <text x="600" y="510" text-anchor="middle" fill="#10b981" font-size="12">
+        100+ transmitters
+      </text>
+      <text x="600" y="525" text-anchor="middle" fill="#10b981" font-size="12">
+        5 degree resolution
+      </text>
+      
+      <!-- Clean pattern -->
+      <polygon points="580,540 620,540 600,515" fill="#10b981" fill-opacity="0.6" stroke="#10b981" stroke-width="2"/>
+      
+      <text x="600" y="605" text-anchor="middle" fill="#10b981" font-size="11">
+        Clean edges
+      </text>
+    </g>
+    
+    <!-- Phase 3 -->
+    <g>
+      <text x="950" y="490" text-anchor="middle" fill="#3b82f6" font-size="14" font-weight="bold">
+        PHASE 3
+      </text>
+      <text x="950" y="510" text-anchor="middle" fill="#3b82f6" font-size="12">
+        1000+ transmitters
+      </text>
+      <text x="950" y="525" text-anchor="middle" fill="#3b82f6" font-size="12">
+        1 degree resolution
+      </text>
+      
+      <!-- Complex pattern -->
+      <g fill="#3b82f6" fill-opacity="0.6">
+        <rect x="935" y="540" width="8" height="8"/>
+        <rect x="945" y="540" width="8" height="8"/>
+        <rect x="955" y="540" width="8" height="8"/>
+        <rect x="930" y="550" width="8" height="8"/>
+        <rect x="950" y="550" width="8" height="8"/>
+        <rect x="960" y="550" width="8" height="8"/>
+        <rect x="935" y="560" width="8" height="8"/>
+        <rect x="945" y="560" width="8" height="8"/>
+        <rect x="955" y="560" width="8" height="8"/>
+      </g>
+      
+      <text x="950" y="605" text-anchor="middle" fill="#3b82f6" font-size="11">
+        QR-code detail
+      </text>
+    </g>
+  </g>
+  
+  <!-- Progress arrows -->
+  <defs>
+    <marker id="progressArrow" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#fbbf24"/>
+    </marker>
+  </defs>
+  
+  <line x1="350" y1="245" x2="390" y2="245" stroke="#fbbf24" stroke-width="3" marker-end="url(#progressArrow)"/>
+  <line x1="700" y1="245" x2="740" y2="245" stroke="#fbbf24" stroke-width="3" marker-end="url(#progressArrow)"/>
+  
+  <line x1="400" y1="550" x2="450" y2="550" stroke="#fbbf24" stroke-width="2" marker-end="url(#progressArrow)"/>
+  <line x1="750" y1="550" x2="800" y2="550" stroke="#fbbf24" stroke-width="2" marker-end="url(#progressArrow)"/>
+</svg>
